@@ -9,4 +9,5 @@
 8-firstdelete (rm ) - Delete a file
 9-firstdirdeletion (rmdir) - Delete a directory
 10-back (cd - ) - Change to the previous directory
-11-lists(ls -l . .. /boot) - List in long format the working directory , parent directory and in the /boot directory 
+11-lists(ls -l . .. /boot) - List in long format the working directory , parent directory and in the /boot directory
+12-file_type (file ) - print the typeof file 
