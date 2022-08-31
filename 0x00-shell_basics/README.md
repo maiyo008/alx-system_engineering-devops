@@ -8,4 +8,5 @@
 7-movethatfile (mv /tmp/betty /tmp/my_first_directory) - Move file named betty from / tmp to /tmp/my_first_folder
 8-firstdelete (rm ) - Delete a file
 9-firstdirdeletion (rmdir) - Delete a directory
-10-back (cd - ) - Change to the previous directory 
+10-back (cd - ) - Change to the previous directory
+11-lists(ls -l . .. /boot) - List in long format the working directory , parent directory and in the /boot directory 
