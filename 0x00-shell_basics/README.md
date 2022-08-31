@@ -10,4 +10,5 @@
 9-firstdirdeletion (rmdir) - Delete a directory
 10-back (cd - ) - Change to the previous directory
 11-lists(ls -l . .. /boot) - List in long format the working directory , parent directory and in the /boot directory
-12-file_type (file ) - print the typeof file 
+12-file_type (file ) - print the typeof file
+13-symbolic_link (ln -s /bin/ls __ls__) - Created a symbolic link to /bin/ls named __ls__ 
