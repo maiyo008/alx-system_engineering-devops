@@ -6,3 +6,4 @@
 5-listfilesdigitonly (ls -na) - Display current directory contents in long format,with user and group ids displayed numerically
 6-firstdirectory (mkdir) - make a new directory
 7-movethatfile (mv /tmp/betty /tmp/my_first_directory) - Move file named betty from / tmp to /tmp/my_first_folder
+8-firstdelete (rm ) - Delete a file 
