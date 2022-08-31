@@ -4,3 +4,4 @@
 3-listfiles (ls -l) - Display current directory contents in  the long format
 4-listmorefiles (ls -la) - Display current directory contents including hidden files
 5-listfilesdigitonly (ls -na) - Display current directory contents in long format,with user and group ids displayed numerically
+6-firstdirectory (mkdir) - make a new directory
