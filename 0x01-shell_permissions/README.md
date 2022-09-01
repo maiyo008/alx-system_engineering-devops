@@ -5,4 +5,5 @@ This directory contain excersises on file permissions in linux as explained belo
 2-groups (groups) - Print all the groups the user is part of
 3-new_owner (sudo chown betty hello) - Change ownership of hello to betty
 4-empty (touch) - Create an empty file
+5-execute (chmod) - Add execute permission to owner
 
