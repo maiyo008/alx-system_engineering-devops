@@ -33,4 +33,13 @@
 	* You must use the `while` loop (`for` and `until` are forbidden)
 	* You must use the `if` statement
 
+### Task 5
+* Write a Bash script that loops from 1 to 10 and:
+	* displays `bad luck` for the _4th_ loop iteration
+	* displays `good luck` for the _8th_ loop iteration
+	* displays `Best School` for the other iterations
+* Requirements
+	* You must use the `while` loop (`for` and `until` are forbidden)
+	* You must use the `if`, `elif` and `else` statements
+
 
