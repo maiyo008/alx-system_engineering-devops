@@ -1,0 +1,19 @@
+total 64
+drwxrwxr-x 2 vagrant vagrant  4096 Sep  5 19:07 .
+drwxrwxr-x 6 vagrant vagrant  4096 Sep  5 16:02 ..
+-rw-rw-r-- 1 vagrant vagrant 12288 Sep  5 16:02 .0-hellp_world.swp
+-rwxrw-r-- 1 vagrant vagrant    30 Sep  5 16:08 0-hello_world
+-rw-rw-r-- 1 vagrant vagrant     0 Sep  5 17:38 0-mac_and_cheese
+-rwxrw-r-- 1 vagrant vagrant    28 Sep  5 16:30 1-confused_smiley
+-rwxrw-r-- 1 vagrant vagrant    28 Sep  5 16:36 2-hellofile
+-rwxrw-r-- 1 vagrant vagrant    39 Sep  5 16:39 3-twofiles
+-rwxrw-r-- 1 vagrant vagrant    35 Sep  5 16:50 4-lastlines
+-rwxrw-r-- 1 vagrant vagrant    35 Sep  5 16:58 5-firstlines
+-rwxrw-r-- 1 vagrant vagrant    40 Sep  5 17:03 6-third_line
+-rwxrw-r-- 1 vagrant vagrant    74 Sep  5 18:15 7-file
+-rw-rw-r-- 1 vagrant vagrant     0 Sep  5 17:39 7-file~
+-rwxrw-r-- 1 vagrant vagrant    36 Sep  5 19:05 8-cwd_state
+-rw-rw-r-- 1 vagrant vagrant     0 Sep  5 17:38 Makefile
+-rw-rw-r-- 1 vagrant vagrant   123 Sep  5 16:02 README.md
+-rw-rw-r-- 1 vagrant vagrant   744 Sep  5 17:10 iacta
+-rw-rw-r-- 1 vagrant vagrant     0 Sep  5 19:07 ls_cwd_content
