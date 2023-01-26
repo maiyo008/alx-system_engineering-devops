@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# This script is displaying superstitious numbers
+count=1
+while [ $count -le 20 ]
+do
+	echo $count
+	case $count in 4)
+		echo -n "bad luck from China"
+		printf "/n"
+		echo $count
+		;;
+	 9)
+		echo -n "bad luck from Japan"
+		printf "/n"
+		echo $count
+		;;
+	 17)
+		echo -n "bad luck from Italy"
+		printf "/n"
+		echo $count
+		;;
+	esac
+	((count++))
+done
