@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This scripts prints "To infinity and beyond" indefinately with a delay of 2 sec after each iteration
+count=1
+while [ $count ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+	((count++))
+done

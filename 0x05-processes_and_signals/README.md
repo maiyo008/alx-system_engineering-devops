@@ -47,4 +47,9 @@
 * Requirement:
 	* You cannot use `ps`
 
+### Task 4
+* Write a Bash script that displays `To infinity and beyond` indefinitely.
+* Requirements:
+	* In between each iteration of the loop, add a `sleep 2`
+
 
