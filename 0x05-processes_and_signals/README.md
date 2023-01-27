@@ -56,3 +56,10 @@
 * Write a Bash script that stops [4-to_infinity_and_beyond](https://github.com/maiyo008/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/4-to_infinity_and_beyond) process.
 * Requirements
 	* You must use kill
+
+### Task 6
+* Write a Bash script that stops `4-to_infinity_and_beyond` process.
+* Requirements:
+	* You cannot use `kill` or `killall`
+
+
