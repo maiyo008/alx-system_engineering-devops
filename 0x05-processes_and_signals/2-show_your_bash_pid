@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script displays my Bash pid
+# shellcheck disable=SC2009
+ps -a u | grep "bash"
