@@ -29,3 +29,6 @@
 ### Task 1
 * Types of Network
 
+### Task 3
+* MAC and IP address
+
