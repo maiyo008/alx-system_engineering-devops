@@ -29,6 +29,9 @@
 ### Task 1
 * Types of Network
 
-### Task 3
+### Task 2
 * MAC and IP address
+
+### Task 3
+* UDP and TCP
 
