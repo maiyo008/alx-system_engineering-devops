@@ -16,3 +16,6 @@
 	* facebook.com resolves to 8.8.8.8.
 	* The checker is running on Docker, so make sure to read [this](http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/)
 
+### Task 1
+* Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+
