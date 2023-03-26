@@ -66,3 +66,13 @@ Requirements:
 * Number of bits in the created key to be created 4096
 * The created key must be protected by the passphrase betty
 </Details>
+
+### Task 2. Client configuration file
+<Details>
+Your machine has an SSH configuration file for the local SSH client, let’s configure it to our needs so that you can connect to a server without typing a password. Share your SSH client configuration in your answer file.
+
+Requirements:
+
+* Your SSH client configuration must be configured to use the private key ~/.ssh/school
+* Your SSH client configuration must be configured to refuse to authenticate using a password
+</Details>

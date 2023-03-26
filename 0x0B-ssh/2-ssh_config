@@ -1,0 +1,7 @@
+# holberton server config option
+Host your-server
+    HostName 54.87.158.226
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PreferredAuthentications publickey
+    PasswordAuthentication no
