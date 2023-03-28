@@ -10,3 +10,4 @@ sudo sed -i "5i $new_string" /etc/nginx/sites-available/default
 
 # Restart nginx
 sudo service nginx restart
+sudo service nginx reload
