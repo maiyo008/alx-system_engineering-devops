@@ -3,6 +3,7 @@
 # Update packages and install nginx
 sudo apt-get update
 sudo apt-get install -y nginx
+sudo service nginx start
 
 new_string="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
 sudo sed -i "5i $new_string" /etc/nginx/sites-available/default
