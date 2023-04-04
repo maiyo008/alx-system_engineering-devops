@@ -14,8 +14,8 @@ frontend http_front
 backend http_back
   mode http
   balance roundrobin
-  server web-01 [130807]-web-01:80 check
-  server web-02 [130807]-web-02:80 check
+  server 130807-web-01 54.87.158.226:80 check
+  server 130807-web-02 34.229.186.174:80 check
 EOF'
 
 # Check if configuration is valid
