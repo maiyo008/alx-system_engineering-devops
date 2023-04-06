@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Step 1: Start Nginx
+sudo systemctl start nginx
+
+# Step 2: Check Nginx configuration and reload if necessary
+sudo nginx -t
+sudo systemctl reload nginx
+
+# Step 3: Check if port 80 is already in use
+if sudo netstat -tlnp | grep ':80'; then
+    echo "Port 80 is already in use by another process. Please stop that process or configure Nginx to listen on a different port."
+    exit 1
+fi
+
+# Step 4: Configure Nginx to listen on port 80 for all active IPv4 IPs
+sudo sed -i '/^http {/a \    listen 80;' /etc/nginx/nginx.conf
+sudo systemctl reload nginx
+
+echo "Nginx is now listening on port 80 for all the server's active IPv4 IPs."
