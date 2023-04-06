@@ -1,0 +1,24 @@
+defaults
+        timeout client 30s
+        timeout server 30s
+        timeout connect 5s
+
+frontend http_front
+  bind *:80
+  mode http
+  default_backend http_back
+
+frontend https
+    bind *:443 ssl crt /etc/letsencrypt/live/www.maiyo.tech/fullchain.pem
+    mode http
+    default_backend www-backend
+
+backend http_back
+  mode http
+  balance roundrobin
+  server 130807-web-01  54.87.158.226:80 check
+  server 130807-web-02 34.229.186.174:80 check
+
+backend www-backend
+  mode http
+  balance roundrobin
