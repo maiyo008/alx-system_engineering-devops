@@ -15,23 +15,23 @@ if __name__ == '__main__':
         user_response = requests.get(
                             "{}/users?id={}".format(base_url, employee_id))
         user_response.raise_for_status()
-         user_info = user_response.json()[0]
-         employee_name = user_info.get("name")
+        user_info = user_response.json()[0]
+        employee_name = user_info.get("name")
 
-         """Get todo list"""
-         todo_response = requests.get(
-                             "{}/todos?userID={}".format(base_url, employee_id))
-         todo_response.raise_for_status()
-         todo_list = todo_response.json()
+        """Get todo list"""
+        todo_response = requests.get(
+                             "{}/todos?userId={}".format(base_url, employee_id))
+        todo_response.raise_for_status()
+        todo_list = todo_response.json()
 
-         """Extract completed tasks"""
-         completed_tasks = [task for task in todo_list if task.get("completed")]
-         num_completed_tasks = len(completed_tasks)
-         total_num_tasks = len(todo_list)
+        """Extract completed tasks"""
+        completed_tasks = [task for task in todo_list if task.get("completed")]
+        num_completed_tasks = len(completed_tasks)
+        total_num_tasks = len(todo_list)
 
-         print("Employee {} is done with tasks({}/{}):".format(
+        print("Employee {} is done with tasks({}/{}):".format(
                          employee_name, num_completed_tasks, total_num_tasks))
-         for task in completed_tasks:
-             print(f"\t {task['title']}")
+        for task in completed_tasks:
+            print(f"\t {task['title']}")
     except requests.exceptions.HTTPError as error:
         print("Error: {}".format(error))
