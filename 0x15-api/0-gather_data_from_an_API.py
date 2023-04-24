@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-""" This script to gather data from REST API.
+"""
+This script to gather data from REST API.
 Also it takes in an employee_id parameter and returns
 the data for the specific employee.
 From the data we output the employees,
 progress with their todolists
- """
+"""
 import requests
 import sys
 
