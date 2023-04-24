@@ -5,9 +5,6 @@ import sys
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print("Usage: python3 0-gather_data_from_an_api <employee_id>")
-        sys.exit(1)
     employee_id = sys.argv[1]
     base_url = "https://jsonplaceholder.typicode.com"
     try:
