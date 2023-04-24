@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Spreadsheet Column Printer
+'''Spreadsheet Column Printer
 
 This script allows the user to print to the console all columns in the
 spreadsheet. It is assumed that the first row of the spreadsheet is the
@@ -16,7 +16,7 @@ functions:
 
     * get_spreadsheet_cols - returns the column headers of the file
     * main - the main function of the script
-"""
+'''
 import csv
 import requests
 import sys
