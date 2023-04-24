@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+
 This script to gather data from REST API.
 Also it takes in an employee_id parameter,
 returns the data for the specific employee.
