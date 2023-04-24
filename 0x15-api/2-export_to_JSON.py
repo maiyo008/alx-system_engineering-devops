@@ -1,12 +1,13 @@
 #!/usr/bin/python3
+"""This script uses REST API
+
+The script gathers data from REST API. It takes in <employee_id>
+as a parameter, and returns the data for the specific employee.
+From the data received we export it to a JSON file.
+
+The JSON file stores all the tasks owned by <this> employee.
 """
-This script to gather data from REST API.
-Also it takes in an employee_id parameter,
-returns the data for the specific employee.
-From the data we output the employees, progress with their todolists
-It writes the output of specific employees to a csv file
-"""
-import csv
+import json
 import requests
 import sys
 
@@ -42,15 +43,17 @@ if __name__ == '__main__':
         for task in completed_tasks:
             print(f"\t {task['title']}")
 
-        """ exporting to a csv file"""
-        with open("{}.csv".format(employee_id), "w", newline="") as csvfile:
-            csvwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-            for task in todo_list:
-                csvwriter.writerow([
-                    employee_id,
-                    employee_username,
-                    task.get("completed"),
-                    task.get("title")
-                ])
+        """ exporting to a json file"""
+        data = {}
+        data[employee_id] = []
+        for task in todo_list:
+            data[employee_id].append({
+                "task": task.get("title"),
+                "completed": task.get("completed"),
+                "username": employee_username
+            })
+        filename = "{}.json".format(employee_id)
+        with open(filename, "w") as outfile:
+            json.dump(data, outfile)
     except requests.exceptions.HTTPError as error:
         print("Error: {}".format(error))
