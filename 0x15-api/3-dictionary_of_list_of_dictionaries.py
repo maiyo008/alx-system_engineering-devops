@@ -2,7 +2,7 @@
 """
 
 Script is used to gather data from REST API. Once we have the data,
-we export it to a JSON file, to record all users and the tasks 
+we export it to a JSON file, to record all users and the tasks
 assigned to them
 """
 from json import dump
