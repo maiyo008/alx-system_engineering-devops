@@ -20,7 +20,9 @@ if __name__ == '__main__':
 
         """Get todo list"""
         todo_response = requests.get(
-                             "{}/todos?userId={}".format(base_url, employee_id))
+                             "{}/todos?userId={}".format(
+                                base_url, employee_id
+                                ))
         todo_response.raise_for_status()
         todo_list = todo_response.json()
 
