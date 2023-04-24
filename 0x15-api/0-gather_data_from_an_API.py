@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-""" Script to gather data from REST API """
+""" This script to gather data from REST API.
+Also it takes in an employee_id parameter and returns
+the data for the specific employee.
+From the data we output the employees,
+progress with their todolists
+ """
 import requests
 import sys
 
@@ -16,7 +21,7 @@ if __name__ == '__main__':
             "{}/users?id={}".format(base_url, employee_id))
         user_response.raise_for_status()
         user_info = user_response.json()[0]
-        employee_name = user_info["name"]
+        employee_name = user_info.get("name")
 
         """Get todo list"""
         todo_response = requests.get(
@@ -25,7 +30,7 @@ if __name__ == '__main__':
         todo_list = todo_response.json()
 
         """Extract completed tasks"""
-        completed_tasks = [task for task in todo_list if task["completed"]]
+        completed_tasks = [task for task in todo_list if task.get("completed")]
         num_completed_tasks = len(completed_tasks)
         total_num_tasks = len(todo_list)
 
