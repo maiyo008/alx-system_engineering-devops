@@ -41,7 +41,7 @@ if __name__ == '__main__':
         print("Employee {} is done with tasks({}/{}):".format(
             employee_name, num_completed_tasks, total_num_tasks))
         for task in completed_tasks:
-            print(f"\t {task['title']}")
+            print("\t {}".format(task['title']))
 
         """ exporting to a json file"""
         data = {}
