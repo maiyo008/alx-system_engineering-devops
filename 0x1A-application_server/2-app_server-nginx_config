@@ -1,0 +1,9 @@
+server {
+        listen 80;
+        server_name 54.87.158.226;
+
+        location /airbnb-onepage/ {
+                include proxy_params;
+                proxy_pass http://unix:/home/ubuntu/AirBnB_clone_v2/AirBnB_clone_v2.sock;
+        }
+}
