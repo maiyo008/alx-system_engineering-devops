@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Find the Gunicorn process ID
+pid=$(pgrep gunicorn)
+
+if [[ -z $pid ]]; then
+  echo "Gunicorn process not found"
+  exit 1
+fi
+
+# Gracefully reload Gunicorn by sending a HUP signal
+kill -HUP "$pid"
+
+echo "Gunicorn reloaded gracefully"
